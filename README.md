@@ -15,7 +15,7 @@ Jupyter Notebook **PythonTutorial.ipynb** sẽ giúp anh/chị làm quen với n
 Jupyter Notebook **CascadeClassifier.ipynb** sẽ đi qua các bước sử dụng thuật toán của Viola - Jone để nhận diện khuôn mặt.
 
 ## Phát hiện khuôn mặt sử dụng Eigenface
-Jupyter Notebook *EigenfacesDetection.ipynb* sẽ đi qua các bước để phát hiện khuôn mặt trong ảnh sử dụng Eigenfaces.
+Jupyter Notebook **EigenfacesDetection.ipynb** sẽ đi qua các bước để phát hiện khuôn mặt trong ảnh sử dụng Eigenfaces.
 
 ## Nhận dạng khuôn mặt sử dụng Eigenface
 Jupyter Notebook **EigenfacesRecognitionWithSVM.ipynb** sẽ đi qua các bước cài đặt chương trình nhận dạng khuôn mặt tu bộ dữ liệu LFW. Chương trình sử dụng Eigenfaces và bộ phân lớp SVM để xác định danh tính của các cá nhân từ ảnh.
