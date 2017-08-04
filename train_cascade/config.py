@@ -1,15 +1,29 @@
 import os
 
+OUTPUT_DIR = "data/new_cascade/"
+
+###################### change parameters ########################
+WIDTH = 20
+HEIGHT = 20
+MAX_NUM_POS = 100
+
+NUM_POS = 80
+NUM_NEG = 100
+NUM_STAGES = 7
+
+MAX_FALSE_ALARM_RATE = 0.5
+MIN_HIT_RATE = 0.995
+
+FEATURE_TYPE = "LBP"
+BOOST_TYPE = "DAB"
+
+EXTRA_PARAMS = "-precalcValBufSize 1000 -precalcIdxBufSize 1000"
+
+#################################################################
 
 OPENCV_DIR = ""
 BASE_DIR = "data/"
-
 BATCH_FILE = os.path.join(BASE_DIR, "batch.txt")
-
-FEATURE_TYPE = "LBP"
-NUM_STAGES = "7"
-EXTRA_PARAMS = "-precalcValBufSize 1000 -precalcIdxBufSize 1000"
-
 SAMPLE_CREATOR = os.path.join(OPENCV_DIR, "opencv_createsamples")
 CASCADE_TRAINER = os.path.join(OPENCV_DIR, "opencv_traincascade")
 
