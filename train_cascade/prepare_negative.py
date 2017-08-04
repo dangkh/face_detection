@@ -27,10 +27,16 @@ def prepare_negative():
 
             if os.path.isdir(input_path):
                 continue
+                
+            if filename.endswith(".txt"):
+                continue
+
+            if filename.endswith(".db"):
+                continue
 
             output_path = os.path.join(OUTPUT_NEGATIVE_DIR, filename)
             shutil.copy2(input_path, output_path)
-            f.write(input_path + "\n")
+            f.write(os.path.abspath(output_path) + "\n")
             count += 1
 
     with open(NUM_NEG_FILE, "w") as f:
