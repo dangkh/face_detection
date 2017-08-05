@@ -1,4 +1,6 @@
 import os
+import platform
+
 
 OUTPUT_DIR = "data/new_cascade/"
 
@@ -7,7 +9,7 @@ WIDTH = 20
 HEIGHT = 20
 MAX_NUM_POS = 100
 
-NUM_POS = 80
+NUM_POS = 90
 NUM_NEG = 100
 NUM_STAGES = 7
 
@@ -21,7 +23,11 @@ EXTRA_PARAMS = "-precalcValBufSize 1000 -precalcIdxBufSize 1000"
 
 #################################################################
 
-OPENCV_DIR = ""
+if platform.system() == "Linux":
+    OPENCV_DIR = "bin/"
+else:
+    OPENCV_DIR = ""
+
 BASE_DIR = "data/"
 BATCH_FILE = os.path.join(BASE_DIR, "batch.txt")
 SAMPLE_CREATOR = os.path.join(OPENCV_DIR, "opencv_createsamples")

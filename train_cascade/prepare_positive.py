@@ -29,7 +29,7 @@ def prepare_positive():
 
         new_filename = filename
         if " " in filename:
-            _, file_extension = os.path.splittext(filename)
+            _, file_extension = os.path.splitext(filename)
             new_filename = str(uuid.uuid4()).replace("-", "") + file_extension
 
         output_path = os.path.join(OUTPUT_POSITIVE_DIR, new_filename)
