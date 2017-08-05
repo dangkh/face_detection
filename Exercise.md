@@ -22,4 +22,18 @@ Anh/chị cần mở file **`train_cascade/config.py`** để căn chỉnh các 
 - `FEATURE_TYPE`:  Type of features: HAAR - Haar-like features, LBP - local binary patterns.
 - `BOOST_TYPE`:  Type of boosted classifiers: DAB - Discrete AdaBoost, RAB - Real AdaBoost, LB - LogitBoost, GAB - Gentle AdaBoost.
 - `EXTRA_PARAMS`: Các tham số khác, xem chi tiết tại [đây](http://docs.opencv.org/trunk/dc/d88/tutorial_traincascade.html).
- 
+
+## Lưu ý
+Khi dùng file Jupyter Notebook **`CascadeClassifierTraning.ipynb`** để huấn luyện, sau khi sửa xong file **`config.py`**, code có thể chưa được update dẫn đến việc anh/chị huấn luyện lại model với tham số cũ. Để tránh việc đó, anh/chị có thể không dùng Jupyter Notebook để huấn luyện, thay vào đó chạy trực tiếp các file `.py` tại thư mục **`face_detection`**.
+
+### Chuẩn bị dữ liệu
+Chạy lệnh sau để chuẩn bị dữ liệu. Nếu không có thay đổi dữ liệu và `HEIGHT`, `WIDTH` của cửa sổ dịch thì chỉ cần chạy lệnh này lần đầu.
+```bash
+python prepare_samples.py
+```
+
+### Huấn luyện cascade classifier
+Dùng lệnh sau để huấn luyện.
+```bash
+python train_cascade.py
+```
