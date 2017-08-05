@@ -22,3 +22,6 @@ Jupyter Notebook **EigenfacesDetection.ipynb** sẽ đi qua các bước để p
 
 ## Nhận dạng khuôn mặt sử dụng Eigenface
 Jupyter Notebook **EigenfacesRecognitionWithSVM.ipynb** sẽ đi qua các bước cài đặt chương trình nhận dạng khuôn mặt tu bộ dữ liệu LFW. Chương trình sử dụng Eigenfaces và bộ phân lớp SVM để xác định danh tính của các cá nhân từ ảnh.
+
+## Bài tập thực hành
+Xem tại [đây](https://github.com/kienvu58/face_detection/blob/master/Exercise.md)
