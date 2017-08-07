@@ -11,8 +11,8 @@ Hướng dẫn chi tiết hơn có thể xem tại [đây](http://cs231n.github.
 ## Python tutorial (optional)
 Jupyter Notebook **PythonTutorial.ipynb** sẽ giúp anh/chị làm quen với ngôn ngữ python.
 
-## Phát hiện khuôn mặt sử dụng thuật toán của Viola - Jone
-Jupyter Notebook **CascadeClassifier.ipynb** sẽ đi qua các bước sử dụng thuật toán của Viola - Jone để nhận diện khuôn mặt.
+## Phát hiện khuôn mặt sử dụng thuật toán của Viola - Jones
+Jupyter Notebook **CascadeClassifier.ipynb** sẽ đi qua các bước sử dụng thuật toán của Viola - Jones để nhận diện khuôn mặt.
 
 ## Huấn luyện Cascade Classifier
 Jupyter Notebook **CascadeClassifierTraining.ipynb** sẽ đi qua các bước để huấn luyện một bộ phân lớp phân tầng.
